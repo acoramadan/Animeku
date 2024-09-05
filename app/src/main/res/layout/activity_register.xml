@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_regis"
+    tools:context=".User.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textColor="@color/birusedikitmuda"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/formregister"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:hint="Masukkan Username"
+            android:textColorHint="@color/white"
+            app:startIconDrawable="@drawable/person"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="@string/app_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:hint="Masukkan Email"
+            android:textColorHint="@color/white"
+            app:startIconDrawable="@drawable/mail"
+            app:endIconMode="clear_text"
+            app:startIconContentDescription="@string/app_name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Password"
+            android:textColorHint="@color/white"
+            app:endIconMode="password_toggle"
+            app:iconTint = "@color/white"
+            app:startIconDrawable="@drawable/key"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/KonfirmasiRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="konfirmasi password"
+            android:textColorHint="@color/white"
+            app:endIconMode="password_toggle"
+            app:iconTint = "@color/white"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonregister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/formregister"
+        android:layout_marginTop="20sp"
+        tools:layout_editor_absoluteX="0dp" >
+
+        <Button
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:id="@+id/registerbutton"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/birusedikitmuda"
+            android:textColor="@color/white"
+            android:text="Register"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40pt"
+        app:layout_constraintTop_toBottomOf="@+id/formregister"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Sudah punya akun?"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/loginpage"
+            android:layout_width = "70dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Login"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

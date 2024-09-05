@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "810517647876",
+    "project_id": "animeku-41de0",
+    "storage_bucket": "animeku-41de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810517647876:android:e14fd834ea579a4c391b51",
+        "android_client_info": {
+          "package_name": "com.example.animeku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDULe7C_X8fPJSpyHq58jlK7equPllTL5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

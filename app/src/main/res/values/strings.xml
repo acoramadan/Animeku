@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Animeku</string>
+    <string name="login">LOGIN</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="register">REGISTER</string>
+</resources>
