@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/jadwal"
         android:enabled="true"
         android:icon="@drawable/schedule"
-        android:title="Schedule"/>
+        android:title="@string/schedule"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/home"
         android:enabled="true"
         android:icon="@drawable/home"
-        android:title="Home"/>
+        android:title="@string/home"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/profile"
         android:enabled="true"
         android:icon="@drawable/account_circle"
-        android:title="Profile"/>
+        android:title="@string/profile"/>
 </menu>

@@ -42,6 +42,7 @@ android {
 
 dependencies {
     implementation("androidx.compose.material3:material3:1.1.0")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -53,7 +54,6 @@ dependencies {
     implementation(libs.play.services.auth)
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
-    implementation(libs.googleid)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
