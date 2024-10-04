@@ -7,4 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".User.UpdateActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nama_lengkap"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:boxStrokeColor="@color/aqua"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/aqua"
+            app:startIconTint="@color/aqua"
+            app:helperTextEnabled="true"
+            app:helperText="@string/masukkan_nama_lengkap"
+            app:startIconContentDescription="@string/masukkan_nama_lengkap"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:startIconDrawable="@drawable/mail"
+            app:helperTextEnabled="true"
+            app:helperText="@string/masukkan_nama_lengkap"
+            app:startIconTint="@color/aqua"
+            app:startIconContentDescription="@string/masukkan_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/filledButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:text="@string/masukkan"
+            app:backgroundTint="@color/aqua" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity(),View.OnClickListener{
         val fragment = fragmentManager.findFragmentByTag(profileFragment::class.java.simpleName)
         val fragmenthome  = fragmentManager.findFragmentByTag(homeFragment::class.java.simpleName)
         val fragmentSchedule = fragmentManager.findFragmentByTag(scheduleFragment::class.java.simpleName)
+
+        fragmentManager.beginTransaction().add(binding.frameContainer.id,HomeFragment,homeFragment::class.java.simpleName).commit()
         navigationBar = binding.bottomNavigation
 
         navigationBar.setOnItemSelectedListener { item ->
