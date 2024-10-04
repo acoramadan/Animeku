@@ -60,7 +60,7 @@ class homeFragment : Fragment(), View.OnClickListener {
             detailCategoryFragment.description = description
 
          }
-        
+
     }
     override fun onClick(view: View?) {
 
